@@ -121,3 +121,58 @@ The Docusaurus documentation (e.g., `.md` files in the `/docs` folder) is [Creat
 [![Rocket Validator logo](./admin/img/rocketvalidator-logo.png)](https://rocketvalidator.com/)
 
 [Rocket Validator](https://rocketvalidator.com/) helps us find HTML markup or accessibility issues.
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom SMS Sender</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+    .sms-form {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 400px;
+    }
+    .sms-form h2 {
+      margin-bottom: 20px;
+    }
+    .sms-form input, .sms-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .sms-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .sms-form button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>  <form class="sms-form" id="smsForm">
+    <h2>Send SMS</h2>
+    <input type="text" id="apiKey" placeholder="Enter API Key" required>
+    <input type="text" id="phoneNumber" placeholder="Enter Phone Number" required>
+    <textarea id="message" placeholder="Enter Message" rows="4" required></textarea>
+    <button type="submit">Send SMS</button>
+  </form>  <script>
+    document.getElementById('smsForm').addEventListener![FB_IMG_1735675385992](https://github.com/user-attachments/assets/c59f4890-b0e4-4b62-a2ac-d270610d1fd2)
